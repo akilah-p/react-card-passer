@@ -27,7 +27,7 @@ function App() {
         />
         <CardList
           cards={deck}
-          player={'deck'}
+          player={' deck'}
         />
       </section>
       <section>

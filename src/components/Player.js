@@ -7,7 +7,7 @@ export default function Player({ player, hand }) {
   const { setTo, to } = useContext(GameContext);
   return (
     <div 
-      className={`player ${to === player ? 'selected-player' : ''}`}
+      className={`player ${to === player ? 'selected-player' : ' '}`}
       onClick={() => setTo(player)}>
       <p>Player{player}</p>
       <CardList
