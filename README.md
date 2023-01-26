@@ -1,7 +1,6 @@
+# React Half Baked Card Passer Challenge
 
 ![breaking down components](./GameContext.png)
-
-# React Half Baked Card Passer Challenge
 
 ## Demo
 
