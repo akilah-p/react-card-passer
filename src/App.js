@@ -4,39 +4,21 @@ import Player from './components/Player';
 import CardList from './components/CardList';
 import { useContext } from 'react';
 import ExecutePassButton from './components/ExecutePassButton';
-import { GameContext  } from './context/GameContext';
+import { GameContext } from './context/GameContext';
 
 //remove the brackets and put it all in a const with just curly braces
 function App() {
-   const { playerOneHand, playerTwoHand, playerThreeHand, selectedCard, deck } = useContext(GameContext);
-  // const [from, setFrom] = useState('deck');
-  // const [to, setTo] = useState(1); going one section at at ime
+  c
+  onst { deck, setDeck,
+    playerOneHand, setPlayerOneHand,
+    playerTwoHand, setPlayerTwoHand,
+    playerThreeHand, setPlayerThreeHand,
+    selectedCard, setSelectedCard, 
+  from, 
+to
+} = useContext(GameContext);
 
-  // function findCardIndex(value, suit, cards) {
-  //   return cards.findIndex((card) => card.value === value && card.suit === suit);
-  // }
-
-  // function passCard(card) {
-  //   const playerHands = [playerOneHand, playerTwoHand, playerThreeHand];
-  //   const playerHandSetFunctions = [setPlayerOneHand, setPlayerTwoHand, setPlayerThreeHand];
-
-  //   // arrays start at zero, but our players start at 1 :shrug:
-  //   const toHand = playerHands[to - 1] || deck;
-  //   const fromHand = playerHands[from - 1] || deck;
-
-  //   const toSetFunction = playerHandSetFunctions[to - 1] || setDeck;
-  //   const fromSetFunction = playerHandSetFunctions[from - 1] || setDeck;
-
-  //   const cardToMoveIndex = findCardIndex(card.value, card.suit, fromHand);
-  //   const [cardToMove] = fromHand.splice(cardToMoveIndex, 1);
-
-  //   toHand.push(cardToMove);
-
-  //   toSetFunction([...toHand]);
-  //   fromSetFunction([...fromHand]);
-
-  //   setSelectedCard(null);
-  //}
+functionFindCard
 
   return (
     <div className="App">
