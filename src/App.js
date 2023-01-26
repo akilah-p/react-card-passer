@@ -8,17 +8,13 @@ import { GameContext } from './context/GameContext';
 
 //remove the brackets and put it all in a const with just curly braces
 function App() {
-  c
-  onst { deck, setDeck,
-    playerOneHand, setPlayerOneHand,
-    playerTwoHand, setPlayerTwoHand,
-    playerThreeHand, setPlayerThreeHand,
-    selectedCard, setSelectedCard, 
-  from, 
-to
-} = useContext(GameContext);
-
-functionFindCard
+  const { deck, 
+    playerOneHand,
+    playerTwoHand, 
+    playerThreeHand,
+    selectedCard
+   
+  } = useContext(GameContext);
 
   return (
     <div className="App">
