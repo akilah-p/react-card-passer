@@ -1,5 +1,4 @@
 import './App.css';
-// removed initialState in order to refactor
 import Player from './components/Player';
 import CardList from './components/CardList';
 import { useContext } from 'react';

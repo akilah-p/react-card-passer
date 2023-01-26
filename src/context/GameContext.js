@@ -1,9 +1,9 @@
-import { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import initialCards from '../cards-data.js';
 
 const GameContext = createContext();
 
-const GameProvider = ({ kids }) => {
+const GameProvider = ({ children }) => {
     //this is going to be where state is defined
   const [deck, setDeck] = useState(initialCards);
   const [playerOneHand, setPlayerOneHand] = useState([]);
@@ -37,7 +37,6 @@ const GameProvider = ({ kids }) => {
     fromSetFunction([...fromHand]);
 
     setSelectedCard(null);
-        
   }
 
   return (
@@ -56,7 +55,7 @@ const GameProvider = ({ kids }) => {
       passCard,
     }}
     >
-      {kids}
+      {children}
     </GameContext.Provider>
   );
 };
