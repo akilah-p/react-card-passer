@@ -1,28 +1,18 @@
 import React from 'react';
+import { useContext } from 'react';
 import CardList from './CardList';
+import { GameContext } from '../context/GameContext';
 
-export default function Player({
-  player,
-  setTo,
-  hand,
-  setFrom,
-  setSelectedCard,
-  selectedCard,
-  to,
-}) {
+export default function Player({ player, hand }) {
+  const { setTo, to } = useContext(GameContext);
   return (
-    <div
+    <div 
       className={`player ${to === player ? 'selected-player' : ''}`}
-      onClick={() => setTo(player)}
-    >
-      <p>Player {player}</p>
+      onClick={() => setTo(player)}>
+      <p>Player{player}</p>
       <CardList
         player={player}
-        cards={hand}
-        setFrom={setFrom}
-        selectedCard={selectedCard}
-        setSelectedCard={setSelectedCard}
-      />
+        cards={hand} />
     </div>
   );
 }
